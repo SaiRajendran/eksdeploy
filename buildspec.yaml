@@ -23,4 +23,4 @@ phases:
       - echo List directory
       - ls -la
       - echo Push the latest image to cluster
-      - kubectl version
+      - cat deployment.yaml
