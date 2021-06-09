@@ -13,7 +13,8 @@ phases:
     commands:
       - echo Entered the pre_build phase...
       - echo Logging in to Amazon EKS...
-      - aws eks --region $AWS_DEFAULT_REGION update-kubeconfig --name $AWS_CLUSTER_NAME
+      - aws eks --region us-east-2 update-kubeconfig --name eks-bBQhg84j
+      - aws eks update-kubeconfig --name eks-bBQhg84j --region us-east-2 --role-arn arn:aws:iam::666478554588:role/cluster-eks-role
   build:
     commands:
       - echo Entered the build phase...
